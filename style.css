@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+li {
+
+    list-style: none;
+    display: inline-block
+}
+
+a {
+
+    text-decoration: none;
+    transition: all 500ms ease-in-out;
+}
+
+a:hover,
+a:active {
+
+    text-decoration: none;
+}
+
+
+.btn {
+
+    transition: all 300ms ease-in-out;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+
+    background-color: #ededed !important;
+    color: #3c3c3c !important;
+    border: 1px solid #fff !important;
+}
+
+/*Navigation*/
+
+.navbar
+{
+    background-color: #222222 !important;
+    text-transform: uppercase;
+}
+.navbar a {
+
+    color: white !important;
+
+}
+.navbar a:hover {
+    color: #b3c2ff!important;
+
+}
+
+/*Header*/
+
+.header{
+    height: 400px;
+    width: 100%;
+    padding: 30 0 30 0px ;
+    margin-top: 100px;
+    text-align: center;
+    text-orientation: upright;
+    background:  deepskyblue; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, transparent , deepskyblue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, transparent , deepskyblue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right,transparent , deepskyblue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #3697E7 , #867AD1); /* Standard syntax */
+    font-family: 'Playfair Display', serif!important;
+
+}
+.header img {
+
+    width: 90%;
+    margin: 25px 0 0 20px;
+}
+.header h3 {
+    font-size: 48px;
+    margin-top: 100px;
+    font-family: 'Playfair Display', serif!important;
+}
+.header p {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif; !important;
+    margin-top: 30px;
+}
+.col1{
+    color: white;
+}
+.col1 h2  {
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+
+}
+.header
+
+/*End Header*/
+
+/*whyus*/
+
+
+#whyus{
+
+    margin-left: 100px;
+    font-size: 20px;
+
+}
+.whyus h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif!important;
+
+}
+.whyus div  {
+    font-size: 15px;
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+}
+
+.whyus h3{
+    text-align: center;
+    padding: 5px;
+}
+
+
+/*whoweare*/
+
+
+.whoweare{
+    background-color: #ECEFF1;
+    height: 100px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+
+
+}
+.whoweare p {
+    font-size: 40px;
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif!important;
+}
+
+
+
+/*about*/
+.about{
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.about img {
+    width: 100%;
+    padding: 30px;
+}
+.about p {
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.about h3{
+    color: #03A9F4;
+    font-family: 'Playfair Display', serif!important;
+}
+
+
+/*hover img*/
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    width: 100%;
+}
+
+.text {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+/*end---hover img*/
+
+
+/*service*/
+
+.service{
+    background-color: #9575CD;
+    height: 500px;
+
+}
+.service p {
+    margin-top: 50px;
+}
+.offer h3 {
+
+    font-family: 'Playfair Display', serif!important;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+
+
+}
+
+
+
+/* end-service*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
