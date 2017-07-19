@@ -241,7 +241,10 @@ a:active {
     margin-top: 15px;
     margin-bottom: 40px;
 
-
+}
+.service img{
+    height: 400px;
+    margin-top: 50px;
 }
 
 
