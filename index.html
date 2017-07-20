@@ -17,53 +17,61 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
-
-
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-
-
-
 
     </head>
 
     <body>
 
+
+    <!-- animation our's photo-face -->
     <script>
+    $(document).ready(function(){
+
+        $(".pic").stop().animate({'opacity': 0.5}, "slow");
+
+        $(".pic").hover(function() {
+            $('.pic').stop().animate({'opacity': 0.5}, "slow");
+            $(this).stop().animate({'opacity': 1}, "slow");
+
+        },function() {
+
+            $(".pic").stop().animate({'opacity': 0.5}, "slow");
+        });
+    });
+    </script>
+
+    <!--animation photo at the bottom of the page-->
+    <script>
+        var i = true;
         $(document).ready(function(){
 
+            element = $('*[data-animate2]');
+            element.hover(function() {
 
-            $(".pic").hover(function() { //kursor wchodzi
-                $('.pic').stop().animate({'opacity': 0.3}, "slow");
-                $(this).stop().animate({'opacity': 1}, "slow");
-            },function() { //kursor wychodzi
+                if(i == true) { element.removeClass('animated ' + $(this).data('animate2')); }
+                $(this).addClass('animated ' + $(this).data('animate2')), i = false ;
 
-                $(".pic").stop().animate({'opacity': 0.5}, "slow");
+            },function() {
+             //Don't work very well
             });
-
         });
     </script>
 
+    <script src="jquery.viewportchecker.min.js"></script> <!--Current position of the page-->
 
-    <script src="jquery.viewportchecker.min.js"></script>
-    <script>
-        $(document).ready(function(){
+    <script> //animation - slide up all section
+    $(document).ready(function(){
 
-            $('*[data-animate]').addClass('hider').each(function(){
-                $(this).viewportChecker({
-                    classToAdd: 'show animated ' + $(this).data('animate'),
-                    classToRemove: 'hider',
-                    offset: '30%'
-                });
+        $('*[data-animate]').addClass('hider').each(function(){
+            $(this).viewportChecker({
+                classToAdd: 'animated ' + $(this).data('animate'),
+                classToRemove: 'hider',
+                offset: '30%'
             });
-
         });
+    });
     </script>
-
 
 
 
@@ -98,7 +106,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-xs-12 ">
-                <img id="caruzel" src="graphic/Untitled-1.png" alt="" >
+                <img src="graphic/Untitled-1.png" alt="" >
             </div>
             <div class="col-md-6 col-xs-12 col1">
                 <h3>Z nami zmienisz swoją stronę na lepsze</h3>
@@ -113,7 +121,7 @@
 </div>
 
 <!--whyus-->
-<div data-animate="bounceInUp" id="whyus" class="whyus">
+<div data-animate="bounceInUp" id="whyus" class="whyus">  <!-- data-animate=You can choose animation from https://daneden.github.io/animate.css/ -->
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-xs-12">
@@ -231,25 +239,17 @@
     <div class="container">
             <div class="row">
                 <div  class="col-md-4 col-xs-12">
-                    <img data-animate="rollIn" src="graphic/speedOne.png" alt="">
+                    <img data-animate2="pulse" src="graphic/speedOne.png" alt=""> <!-- data-animate2=You can choose animation from https://daneden.github.io/animate.css/ -->
                 </div>
                 <div class="col-md-4 col-xs-12">
-                    <img data-animate="rollIn" src="graphic/speedOne.png" alt="">
+                    <img data-animate2="pulse" src="graphic/speedOne.png" alt="">
                 </div>
                 <div class="col-md-4 col-xs-12">
-                    <img data-animate="rollIn" src="graphic/speedOne.png" alt="">
+                    <img data-animate2="pulse" src="graphic/speedOne.png" alt="">
                 </div>
             </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
 
 
 </body>
